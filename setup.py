@@ -1,8 +1,6 @@
-from setuptools import setup, find_packages
-
-
-setup(
-    name="foo",
-    version="1.0",
-    packages=find_packages(),
-)
+from distutils.core import setup, Extension
+setup
+(name='foo',
+      version='1.0',
+      ext_modules=[Extension('foo', ['foo.c'])],
+      )
